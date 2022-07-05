@@ -1,0 +1,62 @@
+<!--Desafio de projeto proposto no Bootcamp "Impulso JavaScript Evolution" durante o Módulo "Fundamentos Web com HTML e CSS" 
+fornecido pela Digital Innovation One
+
+Realizado com a ajuda da página "jQuery UI" na aba "Widgets"-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando jQuery</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+    <style type="text/css">
+        .texto {
+            font: 18px arial, helvetica, sans-serif;
+        }
+
+        .painel {
+            font: bold 25px 'times new roman', times, serif;
+        }
+    </style>
+
+    <script>
+        $(function() {
+            $("#tabs").tabs();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1"><span class="painel">Frédéric Chopin</span></a></li>
+            <li><a href="#tabs-2"><span class="painel">Feliks Zemdegs</span></a></li>
+            <li><a href="#tabs-3"><span class="painel">Gabriel Toledo</span></a></li>
+        </ul>
+        <div id="tabs-1">
+            <p class="texto">Frédéric François Chopin, também chamado Fryderyk Franciszek Chopin, foi um pianista polonês radicado na França e compositor para piano da era romântica. É amplamente conhecido como um dos maiores compositores para piano e um dos pianistas mais importantes da história.
+            </p>
+            <p><i style="font-size: 15px; color: gray;">Obs: A composição dele que eu mais gosto é a: <a href="https://www.youtube.com/watch?v=olFHFbijAjM">Nocturne in F minor, Op.55, No.1</a></i></p>
+        </div>
+        <div id="tabs-2">
+            <p class="texto">Feliks Aleksanders Zemdegs, ou apenas Feliks Zemdegs, é um speedcuber mundialmente conhecido por deter vários recordes mundiais com o cubo mágico, além de outras variantes. Comprou seu primeiro cubo de Rubik em abril de 2008 inspirado por pessoas capazes de resolvê-lo rapidamente, auxiliado por tutoriais no Youtube.
+            </p>
+            <p><i style="font: size 15px;"> Canal no <b><a style="color: red;"; href="https://www.youtube.com/c/fazrulz1">Youtube</a></b></i>
+
+            </p>
+        </div>
+        <div id="tabs-3">
+            <p class="texto"> Gabriel Toledo de Alcântara Sguario, mais conhecido como FalleN, é um empresário e jogador profissional de Counter-Strike: Global Offensive (CS:GO). Atualmente joga pel Imperial Esports. Em 2015 ele foi nomeado como a pessoa mais influente no Esports brasileiro. Ele também é investidor da organização brasileira de Esports Games Academy, Gamers Club e YeaH! Gaming.
+            <br><br>
+            De acordo com o site <i>Esports Earnings</i>, Fallen é o profissional de esports brasileiro que mais lucrou em premiações. Estima-se que o valor total ganho por FalleN em premiações seja de 7,067 milhões de dólares, sendo 99% das premiações - 7,059 milhões de dólares - provenientes de campeonatos de Counter-Strike: Global Offensive. O restante da premiação é proveniente de outros jogos, como o Counter-Strike e CrossFire.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
